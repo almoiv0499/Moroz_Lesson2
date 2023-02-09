@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Moroz_Lesson2</string>
+    <string name="string_to_second_activity">На Вторую Активити</string>
+    <string name="string_english_language">Английский язык</string>
+    <string name="string_russian_language">Русский язык</string>
+    <string name="hello_main_activity">Привет Главная Активити!</string>
+</resources>

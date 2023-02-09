@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Moroz_Lesson2</string>
+    <string name="string_to_second_activity">To Second Activity</string>
+    <string name="string_english_language">English Language</string>
+    <string name="string_russian_language">Russian Language</string>
+    <string name="hello_main_activity">Hello Main Activity!</string>
+    <string name="input_text">Input text...</string>
+    <string name="to_main_activity">To Main Activity</string>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margin_start_and_end">40dp</dimen>
+    <dimen name="button_margin_bottom">20dp</dimen>
+    <dimen name="width_fill_all_available_space">0dp</dimen>
+    <dimen name="editText_margin">25dp</dimen>
+</resources>
