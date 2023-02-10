@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout"
+        android:layout_width="@dimen/width_fill_all_available_space"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/editText_margin"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toStartOf="@id/spacer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_text"
+            style="@style/CustomEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_text"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/button_navigate_to_main_activity"
+        app:layout_constraintEnd_toStartOf="@id/textView_for_save_instance"
+        app:layout_constraintStart_toEndOf="@id/input_layout"
+        app:layout_constraintTop_toBottomOf="@id/input_layout" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_for_save_instance"
+        style="@style/CustomTextViewStyle"
+        android:layout_width="@dimen/width_fill_all_available_space"
+        android:layout_height="@dimen/width_fill_all_available_space"
+        app:layout_constraintBottom_toTopOf="@id/button_navigate_to_main_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spacer"
+        app:layout_constraintTop_toBottomOf="@id/input_layout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_navigate_to_main_activity"
+        style="@style/CustomButtonStyle"
+        android:layout_width="@dimen/width_fill_all_available_space"
+        android:layout_height="wrap_content"
+        android:text="@string/to_main_activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spacer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

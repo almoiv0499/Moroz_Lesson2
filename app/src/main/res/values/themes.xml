@@ -22,12 +22,12 @@
     </style>
 
     <style name="CustomTextViewStyle">
-        <item name="android:layout_marginStart">@dimen/margin_start_and_end_for_textViews</item>
-        <item name="android:layout_marginEnd">@dimen/margin_start_and_end_for_textViews</item>
+        <item name="android:layout_marginStart">@dimen/textView_margin_start_and_end</item>
+        <item name="android:layout_marginEnd">@dimen/textView_margin_start_and_end</item>
         <item name="android:ellipsize">end</item>
         <item name="android:lines">2</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">@dimen/text_size_for_all_textViews</item>
+        <item name="android:textSize">@dimen/textView_text_size</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/black</item>
     </style>
