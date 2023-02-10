@@ -6,32 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textView_main_activity"
+        style="@style/CustomTextViewStyle"
         android:layout_width="@dimen/width_fill_all_available_space"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_start_and_end_for_textViews"
-        android:layout_marginEnd="@dimen/margin_start_and_end_for_textViews"
         android:layout_marginTop="@dimen/margin_top_for_textView"
-        android:ellipsize="end"
-        android:gravity="center"
-        android:lines="2"
         android:text="@string/hello_main_activity"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_for_all_textViews"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_navigate_to_second_activity"
+        style="@style/CustomButtonStyle"
         android:layout_width="@dimen/width_fill_all_available_space"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/button_margin_start_and_end"
-        android:layout_marginEnd="@dimen/button_margin_start_and_end"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
         android:text="@string/string_to_second_activity"
-        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
