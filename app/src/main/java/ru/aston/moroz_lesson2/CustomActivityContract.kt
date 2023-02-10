@@ -5,7 +5,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.activity.result.contract.ActivityResultContract
 
-class SecondActivityContract : ActivityResultContract<String, String?>() {
+class CustomActivityContract : ActivityResultContract<String, String?>() {
 
     companion object {
         const val OUTPUT_DATA_KEY = "output_data_key"

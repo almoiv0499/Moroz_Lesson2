@@ -29,22 +29,11 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun navigateToMainActivity() {
-//        with(binding) {
-//            buttonNavigateToMainActivity.setOnClickListener {
-//                val enteredValue = inputText.text.toString()
-//                val intent = Intent(this@ru.aston.moroz_lesson2.SecondActivity, MainActivity::class.java)
-//                    .apply {
-//                        putExtra(NAVIGATE_KEY, enteredValue)
-//                    }
-//                startActivity(intent)
-//            }
-//        }
-
         // Solution using Activity Results API
         binding.buttonNavigateToMainActivity.setOnClickListener {
             val intent = Intent().apply {
                 val passedValue = binding.inputText.text.toString()
-                putExtra(SecondActivityContract.OUTPUT_DATA_KEY, passedValue)
+                putExtra(CustomActivityContract.OUTPUT_DATA_KEY, passedValue)
             }
             setResult(RESULT_OK, intent)
             finish()

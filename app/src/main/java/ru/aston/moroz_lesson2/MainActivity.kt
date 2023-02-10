@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     // Activity Results API
     private val receivedValueLauncher =
-        registerForActivityResult(SecondActivityContract()) { receivedValue ->
+        registerForActivityResult(CustomActivityContract()) { receivedValue ->
             if (receivedValue != null && receivedValue.isNotEmpty()) {
                 editor.putString(STORE_KEY, receivedValue).apply()
                 binding.textViewMainActivity.text = receivedValue
@@ -43,13 +43,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun navigateToSecondFragment() {
         binding.buttonNavigateToSecondActivity.setOnClickListener {
-
             // Activity Results API (launch)
             receivedValueLauncher.launch(binding.textViewMainActivity.text.toString())
-
-            // Modern solution
-//            val intent = Intent(this, SecondActivity::class.java)
-//            startActivity(intent)
         }
     }
 
