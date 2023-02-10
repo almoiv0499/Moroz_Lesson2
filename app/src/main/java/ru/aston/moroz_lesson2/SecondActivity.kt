@@ -7,11 +7,11 @@ import ru.aston.moroz_lesson2.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
     companion object {
-        const val NAVIGATE_KEY = "navigate_key"
         private const val SAVE_STATE_KEY = "save_state_key"
     }
 
     private lateinit var binding: ActivitySecondBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySecondBinding.inflate(layoutInflater)
@@ -29,13 +29,25 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun navigateToMainActivity() {
-        with(binding) {
-            buttonNavigateToMainActivity.setOnClickListener {
-                val enteredValue = inputText.text.toString()
-                val intent = Intent(this@SecondActivity, MainActivity::class.java)
-                intent.putExtra(NAVIGATE_KEY, enteredValue)
-                startActivity(intent)
+//        with(binding) {
+//            buttonNavigateToMainActivity.setOnClickListener {
+//                val enteredValue = inputText.text.toString()
+//                val intent = Intent(this@ru.aston.moroz_lesson2.SecondActivity, MainActivity::class.java)
+//                    .apply {
+//                        putExtra(NAVIGATE_KEY, enteredValue)
+//                    }
+//                startActivity(intent)
+//            }
+//        }
+
+        // Solution using Activity Results API
+        binding.buttonNavigateToMainActivity.setOnClickListener {
+            val intent = Intent().apply {
+                val passedValue = binding.inputText.text.toString()
+                putExtra(SecondActivityContract.OUTPUT_DATA_KEY, passedValue)
             }
+            setResult(RESULT_OK, intent)
+            finish()
         }
     }
 
