@@ -26,6 +26,19 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_for_save_instance"
+        android:layout_width="@dimen/width_fill_all_available_space"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_and_end_for_textViews"
+        android:layout_marginEnd="@dimen/margin_start_and_end_for_textViews"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_for_all_textViews"
+        app:layout_constraintBottom_toTopOf="@id/button_navigate_to_main_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_layout" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_navigate_to_main_activity"
         android:layout_width="@dimen/width_fill_all_available_space"

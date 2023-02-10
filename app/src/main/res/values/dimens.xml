@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="margin_start_and_end_for_textViews">20sp</dimen>
     <dimen name="button_margin_start_and_end">40dp</dimen>
     <dimen name="button_margin_bottom">20dp</dimen>
     <dimen name="width_fill_all_available_space">0dp</dimen>
     <dimen name="editText_margin">25dp</dimen>
+    <dimen name="text_size_for_all_textViews">25sp</dimen>
+    <dimen name="margin_top_for_textView">40dp</dimen>
 </resources>

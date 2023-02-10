@@ -7,50 +7,21 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView_main_activity"
         android:layout_width="@dimen/width_fill_all_available_space"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="@dimen/margin_start_and_end_for_textViews"
+        android:layout_marginEnd="@dimen/margin_start_and_end_for_textViews"
+        android:layout_marginTop="@dimen/margin_top_for_textView"
         android:ellipsize="end"
         android:gravity="center"
         android:lines="2"
         android:text="@string/hello_main_activity"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="@dimen/text_size_for_all_textViews"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_english_language"
-        android:layout_width="@dimen/width_fill_all_available_space"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/button_margin_start_and_end"
-        android:layout_marginEnd="@dimen/button_margin_start_and_end"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:ellipsize="end"
-        android:lines="2"
-        android:text="@string/string_english_language"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@id/button_navigate_to_second_activity"
-        app:layout_constraintEnd_toStartOf="@id/button_russian_language"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_russian_language"
-        android:layout_width="@dimen/width_fill_all_available_space"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/button_margin_start_and_end"
-        android:layout_marginEnd="@dimen/button_margin_start_and_end"
-        android:layout_marginBottom="@dimen/button_margin_bottom"
-        android:ellipsize="end"
-        android:lines="2"
-        android:text="@string/string_russian_language"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@id/button_navigate_to_second_activity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button_english_language" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_navigate_to_second_activity"
