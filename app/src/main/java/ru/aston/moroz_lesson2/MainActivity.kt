@@ -38,10 +38,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        navigateToSecondFragment()
+        navigateToSecondActivity()
     }
 
-    private fun navigateToSecondFragment() {
+    private fun navigateToSecondActivity() {
         binding.buttonNavigateToSecondActivity.setOnClickListener {
             // Activity Results API (launch)
             receivedValueLauncher.launch(binding.textViewMainActivity.text.toString())

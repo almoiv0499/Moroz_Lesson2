@@ -12,12 +12,13 @@ class CustomActivityContract : ActivityResultContract<String, String?>() {
         const val INPUT_DATA_KEY = "input_data_key"
     }
 
-    override fun createIntent(context: Context, input: String): Intent =
-        Intent(context, SecondActivity::class.java).apply {
+    override fun createIntent(context: Context, input: String): Intent {
+        return Intent(context, SecondActivity::class.java).apply {
             putExtra(INPUT_DATA_KEY, input)
         }
+    }
 
-    override fun parseResult(resultCode: Int, intent: Intent?): String? = when(resultCode) {
+    override fun parseResult(resultCode: Int, intent: Intent?): String? = when (resultCode) {
         Activity.RESULT_OK -> intent?.getStringExtra(OUTPUT_DATA_KEY)
         else -> null
     }
