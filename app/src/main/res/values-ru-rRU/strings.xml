@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мороз_Урок2</string>
+    <string name="string_to_second_activity">На Вторую Активити</string>
+    <string name="hello_main_activity">Привет Главная Активити!</string>
+    <string name="input_text">Введите текст…</string>
+    <string name="to_main_activity">На Главную Активити</string>
+    <string name="string_input_text">Введите текст!</string>
+</resources>
